@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace DataModel.Models;
+namespace MainProject.Models;
 
 public class UserDto
 {

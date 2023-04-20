@@ -1,4 +1,4 @@
-﻿namespace DataModel.Models;
+﻿namespace MainProject.Models;
 
 public class VoteDto
 {

@@ -1,11 +1,11 @@
-﻿using Microsoft.AspNetCore.Authorization;
+﻿using MainProject.Interfaces;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Services;
-using Services.ServiceInterfaces;
 using System.Diagnostics;
 
-namespace MainProject
+namespace MainProject.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
@@ -14,7 +14,7 @@ namespace MainProject
         private readonly IFibonacciService _fibonacciService;
         public FibonacciController(IFibonacciService fibonacciService)
         {
-            this._fibonacciService = fibonacciService;
+            _fibonacciService = fibonacciService;
         }
 
         [HttpGet("GetNumberAtPosition/{position}")]

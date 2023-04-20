@@ -1,8 +1,8 @@
 ﻿using System.Linq;
 using System.Security.Claims;
+using MainProject.Interfaces;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
-using Services.ServiceInterfaces;
 
 namespace Services;
 

@@ -1,6 +1,6 @@
 ﻿using System.Security.Claims;
 
-namespace Services.ServiceInterfaces;
+namespace MainProject.Interfaces;
 
 public interface IPlanningPokerIdentity
 {

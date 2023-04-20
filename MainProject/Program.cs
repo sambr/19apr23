@@ -1,8 +1,5 @@
-﻿using Services.ServiceInterfaces;
-using Services;
+﻿using Services;
 using System;
-using DataModel.Interfaces;
-using MainProject;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.Extensions.Configuration;
@@ -12,6 +9,9 @@ using System.Security.Claims;
 using System.Runtime.CompilerServices;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.AspNetCore.Http;
+using MainProject.Interfaces;
+using MainProject.Services;
+using MainProject.Models;
 
 internal class Program
 {

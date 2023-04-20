@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
-using Common.Enums;
+using MainProject.Enums;
 
-namespace DataModel.Models;
+namespace MainProject.Models;
 
 public class StoryDto
 {

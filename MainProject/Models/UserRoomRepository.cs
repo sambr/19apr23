@@ -1,8 +1,7 @@
-﻿using DataModel.Interfaces;
-using DataModel.Models;
+﻿using MainProject.Interfaces;
 using System;
 
-namespace MainProject
+namespace MainProject.Models
 {
     public class UserRoomRepository : IUserRoomRepository
     {
@@ -53,7 +52,7 @@ namespace MainProject
             return Task.CompletedTask;
         }
 
-        public UserRoomDto GetUserRoomByRoomId(int roomId) 
+        public UserRoomDto GetUserRoomByRoomId(int roomId)
         {
             return _userRooms.FirstOrDefault(x => x.RoomId == roomId);
         }

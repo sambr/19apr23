@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
-using DataModel.Models;
+using MainProject.Models;
 
-namespace DataModel.Interfaces;
+namespace MainProject.Interfaces;
 
 public interface IUserRoomRepository
 {

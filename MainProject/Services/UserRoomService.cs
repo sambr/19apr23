@@ -1,9 +1,8 @@
 ﻿using System.Threading.Tasks;
-using DataModel.Interfaces;
-using DataModel.Models;
-using Services.ServiceInterfaces;
+using MainProject.Interfaces;
+using MainProject.Models;
 
-namespace Services;
+namespace MainProject.Services;
 
 public class UserRoomService : IUserRoomService
 {
@@ -25,7 +24,7 @@ public class UserRoomService : IUserRoomService
             RoomId = roomId,
             UserId = _identity.LoggedInUserId
         };
-        
+
         await _userRoomRepository.JoinRoom(userRoomDto);
     }
 
@@ -40,7 +39,7 @@ public class UserRoomService : IUserRoomService
         await _userRoomRepository.Delete(itemToDelete);
     }
 
-    public async Task DeleteByAdmin(int roomId,int userId)
+    public async Task DeleteByAdmin(int roomId, int userId)
     {
         var itemToDelete = new UserRoomDto
         {

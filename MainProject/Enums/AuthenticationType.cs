@@ -1,4 +1,4 @@
-﻿namespace Common.Enums;
+﻿namespace MainProject.Enums;
 
 public enum AuthenticationType
 {

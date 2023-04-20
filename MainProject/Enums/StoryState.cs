@@ -1,6 +1,6 @@
 ﻿using System.Text.Json.Serialization;
 
-namespace Common.Enums;
+namespace MainProject.Enums;
 
 [JsonConverter(typeof(JsonStringEnumConverter))]
 public enum StoryState

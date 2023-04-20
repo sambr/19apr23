@@ -1,7 +1,7 @@
-﻿using DataModel.Models;
+﻿using MainProject.Models;
 using System.Threading.Tasks;
 
-namespace Services.ServiceInterfaces;
+namespace MainProject.Interfaces;
 
 public interface IUserRoomService
 {

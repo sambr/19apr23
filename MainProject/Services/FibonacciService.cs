@@ -1,9 +1,6 @@
-﻿using System.Threading.Tasks;
-using DataModel.Interfaces;
-using DataModel.Models;
-using Services.ServiceInterfaces;
+﻿using MainProject.Interfaces;
 
-namespace Services;
+namespace MainProject.Services;
 
 public class FibonacciService : IFibonacciService
 {
@@ -19,7 +16,7 @@ public class FibonacciService : IFibonacciService
         {
             return 0;
         }
-        if (position < 3) 
+        if (position < 3)
         {
             return position - 1;
         }

@@ -1,10 +1,10 @@
-﻿using DataModel.Models;
+﻿using MainProject.Interfaces;
+using MainProject.Models;
 using Microsoft.AspNetCore.Mvc;
-using Services.ServiceInterfaces;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
-namespace MainProject
+namespace MainProject.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
